@@ -28,7 +28,7 @@ const Navbar = () => {
         <a href="#" className="flex items-center gap-2 mb-3">
           <Sparkles size={20} className="text-sky-400" strokeWidth={1.5} />
           <span className="text-2xl font-bold text-white tracking-tight">
-            Udoy<span className="text-sky-400">Kumar</span>
+            Udoy<span className="text-primary">Kumar</span>
           </span>
         </a>
         {/* desktop nav */}

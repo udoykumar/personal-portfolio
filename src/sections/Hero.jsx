@@ -3,9 +3,7 @@ import React from "react";
 import Button from "../components/Button";
 import {
   ArrowRight,
-  ChevronDown,
   ChevronDownIcon,
-  ChevronsDown,
   Download,
   Github,
   Linkedin,
@@ -91,13 +89,17 @@ const Hero = () => {
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
               <span className="text-sm text-muted-foreground ">Follow: </span>
               {[
-                { icon: Github, href: "#" },
-                { icon: Linkedin, href: "#" },
+                { icon: Github, href: "https://github.com/udoykumar" },
+                {
+                  icon: Linkedin,
+                  href: "https://www.linkedin.com/in/udoy-kumar-pal/",
+                },
                 { icon: X, href: "#" },
               ].map((social, i) => (
                 <a
                   key={i}
                   href={social.href}
+                  target="_blank"
                   className="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-primary/10 hover:text-primary transition-all duration-300"
                 >
                   <social.icon strokeWidth={2} className="w-5 h-5" />

@@ -2,8 +2,12 @@ import { Github, Linkedin, Sparkles, ArrowUp } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const socialLinks = [
-  { icon: Github, href: "#", label: "GitHub" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
+  { icon: Github, href: "https://github.com/udoykumar", label: "GitHub" },
+  {
+    icon: Linkedin,
+    href: "#ttps://www.linkedin.com/in/udoy-kumar-pal/",
+    label: "LinkedIn",
+  },
 ];
 
 const footerLinks = [
@@ -45,7 +49,7 @@ const Footer = () => {
                   strokeWidth={1.5}
                 />
                 <span className="text-2xl font-bold text-white tracking-tight">
-                  Udoy<span className="text-sky-400">Kumar</span>
+                  Udoy<span className="text-primary">Kumar</span>
                 </span>
               </div>
               <p className="text-sm text-slate-500 max-w-[220px] leading-relaxed">
@@ -80,6 +84,7 @@ const Footer = () => {
                   <a
                     key={label}
                     href={href}
+                    target="_blank"
                     aria-label={label}
                     className="w-11 h-11 rounded-xl bg-white/5 border border-white/[0.08] flex items-center justify-center text-slate-400 hover:text-sky-400 hover:bg-sky-400/10 hover:border-sky-400/30 hover:-translate-y-1 hover:shadow-lg hover:shadow-sky-400/10 transition-all duration-200"
                   >
@@ -109,7 +114,7 @@ const Footer = () => {
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           aria-label="Scroll to top"
-          className="fixed bottom-8 right-8 w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-secondary text-white flex items-center justify-center shadow-lg shadow-sky-400/30 hover:-translate-y-1 hover:shadow-sky-400/50 transition-all duration-200 animate-float animation-delay-400 z-50"
+          className="fixed bottom-8 right-8 w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-secondary text-white flex items-center justify-center shadow-lg shadow-primary/50 hover:shadow-primary transition-all duration-200 animate-float animation-delay-400 z-50"
         >
           <ArrowUp size={18} strokeWidth={2} />
         </button>
