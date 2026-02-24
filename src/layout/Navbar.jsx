@@ -1,4 +1,4 @@
-import { Menu, X } from "lucide-react";
+import { Menu, Sparkles, X } from "lucide-react";
 import Button from "../components/Button";
 import { useEffect, useState } from "react";
 
@@ -25,11 +25,11 @@ const Navbar = () => {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? "glass-strong py-3" : "bg-transparent py-5"}`}
     >
       <nav className="container mx-auto flex items-center justify-between">
-        <a
-          href="#"
-          className="text-xl font-bold tracking-tight hover:text-primary border border-primary px-4 py-2 rounded-full"
-        >
-          Udoy Kumar<span className="text-primary">.</span>
+        <a href="#" className="flex items-center gap-2 mb-3">
+          <Sparkles size={20} className="text-sky-400" strokeWidth={1.5} />
+          <span className="text-2xl font-bold text-white tracking-tight">
+            Udoy<span className="text-sky-400">Kumar</span>
+          </span>
         </a>
         {/* desktop nav */}
         <div className="md:flex items-center gap-1 hidden ">
