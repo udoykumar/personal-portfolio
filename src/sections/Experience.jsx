@@ -2,37 +2,48 @@ import React from "react";
 
 const experience = [
   {
-    period: "Jan 2024 - Present",
-    role: "Frontend Developer",
-    company: "TechNova Solutions",
+    period: "Jan 2024 - Dec 2024",
+    role: "Frontend Developer (Learning & Projects)",
+    company: "Self Learning & Personal Projects",
     description:
-      "Developing responsive and user-friendly web applications using modern JavaScript frameworks. Collaborating with designers to implement pixel-perfect UI and improve user experience.",
+      "Started my frontend development journey by building responsive websites and small web applications. Focused on mastering core concepts of HTML, CSS, JavaScript while developing multiple hands-on projects.",
+    technologies: ["HTML5", "CSS3", "JavaScript (ES6+)", "Responsive Design"],
+    current: false,
+  },
+  {
+    period: "Jan 2025 - Dec 2025",
+    role: "React Developer",
+    company: "Programming Hero Course",
+    description:
+      "Built scalable and reusable React applications with proper state management and API integration. Improved performance optimization, component architecture, and clean code practices.",
     technologies: [
-      "React.js",
-      "JavaScript (ES6+)",
-      "Tailwind CSS",
+      "React js",
+      "React Hooks",
+      "Context API",
+      "React Router",
       "REST API",
-      "Git",
+      "Tailwind CSS",
+      "Axios",
+      "Nodejs",
+      "Express",
+      "MongoDB",
+    ],
+    current: false,
+  },
+  {
+    period: "Jan 2026 - Present",
+    role: "Next.js Developer (Learning & Building)",
+    company: "Advanced Frontend Development",
+    description:
+      "Currently building modern full-stack applications using Next.js. Working with App Router, Server Components, SEO optimization, and deployment strategies to create production-ready applications.",
+    technologies: [
+      "Next.js",
+      "App Router",
+      "Server Components",
+      "SSR / SSG",
+      "Vercel Deployment",
     ],
     current: true,
-  },
-  {
-    period: "Jun 2023 - Dec 2023",
-    role: "Junior Web Developer",
-    company: "Creative IT Agency",
-    description:
-      "Built dynamic and interactive website components, optimized performance, and maintained existing client projects with clean and maintainable code.",
-    technologies: ["HTML5", "CSS3", "tailwind"],
-    current: false,
-  },
-  {
-    period: "Jan 2023 - May 2023",
-    role: "Frontend Intern",
-    company: "Digital Wave Studio",
-    description:
-      "Assisted in developing landing pages and reusable UI components while learning industry best practices and version control workflows.",
-    technologies: ["HTML", "CSS", "JavaScript (Basic)"],
-    current: false,
   },
 ];
 const Experience = () => {
