@@ -7,8 +7,8 @@ const projects = [
     description:
       "Flexible and reliable car rental service offering a wide range of vehicles for short-term and long-term use. Convenient bookings, competitive rates, and excellent customer support for a smooth driving experience..",
     tags: ["React", "Tailwind", "Node.js", "Express", "MongoDB"],
-    Live: "https://car-rental-service-frontend.vercel.app/",
-    github: "https://github.com/your-username/car-rental-service",
+    live: "https://car-rental-client-rho.vercel.app/",
+    github: "https://github.com/udoykumar/car-rental-client.git",
     image: "https://i.ibb.co.com/9kQ7zrP7/Screenshot-6.png",
   },
   {
@@ -16,7 +16,7 @@ const projects = [
     description:
       "A community-driven initiative to share, swap, and nurture plants—bringing green spaces and connections to everyone.",
     tags: ["React", "Tailwind", "Node.js", "Express", "MongoDB"],
-    live: "https://plant-share-frontend.vercel.app/",
+    live: "https://plate-share-website.netlify.app/",
     github: "https://github.com/udoykumar/plate-share-client.git",
     image: "https://i.ibb.co.com/bM8Gbdrn/food-share.png",
   },
@@ -25,8 +25,8 @@ const projects = [
     description:
       "Bring nature indoors with Green Nest—easy-care, vibrant indoor plants for a fresh and lively home..",
     tags: ["React", "Tailwind", "Daisy UI", "Firebase"],
-    live: "https://green-nest-indoor-plant-care.vercel.app/",
-    github: "https://github.com/your-username/green-nest-indoor-plant-care",
+    live: "https://green-nest-indoor-plant-care.web.app/",
+    github: "https://github.com/udoykumar/green-nest-indoor-plant.git",
     image: "https://i.ibb.co.com/bjVQ4pWV/Screenshot-17.png",
   },
   {
@@ -34,8 +34,8 @@ const projects = [
     description:
       "Efficiently track, manage, and optimize your company’s assets to maximize productivity and reduce costs....",
     tags: ["React", "Tailwind", "Node.js", "Express", "MongoDB"],
-    live: "https://corporate-assets-management-frontend.vercel.app/",
-    github: "https://github.com/your-username/corporate-assets-management",
+    live: "https://corporate-asset-manageme-8e91f.web.app/",
+    github: "https://github.com/udoykumar/assets-verse-client.git",
     image: "https://i.ibb.co.com/1YLxv3JP/Screenshot-7.png",
   },
 ];
@@ -83,14 +83,15 @@ const Projects = () => {
                 {/* overlay links  */}
                 <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <a
-                    target="blank"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     href={project.live}
                     className="glass p-3 rounded-full hover:bg-primary hover:text-primary-foreground transition-all"
                   >
                     <ArrowUpRight className="w-5 h-5" />
                   </a>
                   <a
-                    target="blank"
+                    target="_blank"
                     href={project.github}
                     className="glass  p-3 rounded-full hover:bg-primary hover:text-primary-foreground transition-all"
                   >
