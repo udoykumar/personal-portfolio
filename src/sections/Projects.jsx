@@ -114,7 +114,7 @@ const Projects = () => {
                   {project.tags.map((tag, ind) => (
                     <span
                       key={ind}
-                      className="text-xs bg-surface px-4 py-2 rounded-full font-medium border border-border/50 text-muted-foreground hover:border-primary/50 transition-all duration-300 cursor-pointer"
+                      className="text-xs  px-4 py-2 rounded-full font-medium border border-border/50 bg-primary/10 text-muted-foreground hover:border-primary/50 transition-all duration-300 cursor-pointer"
                     >
                       {tag}
                     </span>

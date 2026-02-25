@@ -1,4 +1,4 @@
-import { Github, Linkedin, Sparkles, ArrowUp } from "lucide-react";
+import { Github, Linkedin, Sparkles, ArrowUp, X } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const socialLinks = [
@@ -8,6 +8,7 @@ const socialLinks = [
     href: "https://www.linkedin.com/in/udoy-kumar-pal/",
     label: "LinkedIn",
   },
+  { href: "https://x.com/UdoyK1353", label: "X" },
 ];
 
 const footerLinks = [
@@ -88,7 +89,11 @@ const Footer = () => {
                     aria-label={label}
                     className="w-11 h-11 rounded-xl bg-white/5 border border-white/[0.08] flex items-center justify-center text-slate-400 hover:text-sky-400 hover:bg-sky-400/10 hover:border-sky-400/30 hover:-translate-y-1 hover:shadow-lg hover:shadow-sky-400/10 transition-all duration-200"
                   >
-                    <Icon size={18} strokeWidth={1.8} />
+                    {Icon ? (
+                      <Icon size={18} strokeWidth={1.8} />
+                    ) : (
+                      <img src="/x.png" alt="" className="w-7 h-7 text-white" />
+                    )}
                   </a>
                 ))}
               </div>

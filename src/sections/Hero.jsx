@@ -98,7 +98,7 @@ const Hero = () => {
                   icon: Linkedin,
                   href: "https://www.linkedin.com/in/udoy-kumar-pal/",
                 },
-                { icon: X, href: "#" },
+                { icon: X, href: "https://x.com/UdoyK1353" },
               ].map((social, i) => (
                 <a
                   key={i}
