@@ -5,7 +5,7 @@ const socialLinks = [
   { icon: Github, href: "https://github.com/udoykumar", label: "GitHub" },
   {
     icon: Linkedin,
-    href: "#ttps://www.linkedin.com/in/udoy-kumar-pal/",
+    href: "https://www.linkedin.com/in/udoy-kumar-pal/",
     label: "LinkedIn",
   },
 ];
