@@ -81,9 +81,13 @@ const Hero = () => {
               <Button size="lg">
                 Contact Me <ArrowRight className="w-5 h-5" />{" "}
               </Button>
-              <button className=" inline-flex items-center gap-2 rounded-full glass md:px-8 px-4 md:py-4 py-2 text-sm md:text-lg animated-border">
+              <a
+                href="/udoy-kumar.pdf"
+                download
+                className=" inline-flex items-center gap-2 rounded-full glass md:px-8 px-4 md:py-4 py-2 text-sm md:text-lg animated-border"
+              >
                 <Download className="w-3 h-3" /> Download CV
-              </button>
+              </a>
             </div>
             {/* social links */}
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
