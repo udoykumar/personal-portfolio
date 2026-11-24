@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 const navLinks = [
   { name: "About", href: "#about" },
   { name: "Projects", href: "#projects" },
-  { name: "Experience", href: "#experience" },
+  // { name: "Experience", href: "#experience" },
   { name: "Testimonials", href: "#testimonials" },
   { name: "Contact", href: "#contact" },
 ];
@@ -46,7 +46,9 @@ const Navbar = () => {
           </div>
         </div>
         <div className="hidden md:block">
-          <Button size="sm">Contact</Button>
+          <Button size="sm">
+            <a href="#contact">Contact</a>
+          </Button>
         </div>
         {/* mobile menu button  */}
         <button

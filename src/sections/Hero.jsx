@@ -14,24 +14,34 @@ const Hero = () => {
     "React",
     "Next.js",
     "Tailwind CSS",
+    "Javascript",
+    "Typescript",
     "CSS",
     "HTML",
     "Node.js",
     "Express",
     "MongoDB",
+    "Postgres sql",
+    "Prisma",
     "GitHub",
     "Postman",
     "Firebase",
   ];
+  const skillColors = [
+    "border-teal-500/30 bg-teal-500/10 text-teal-400 hover:bg-teal-500/20",
+    "border-purple-500/30 bg-purple-500/10 text-purple-400 hover:bg-purple-500/20",
+    "border-blue-500/30 bg-blue-500/10 text-blue-400 hover:bg-blue-500/20",
+  ];
+
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src="/bg-image2.jpg"
+          src="/profile.png"
           alt="Hero image"
           className="w-full h-full object-cover opacity-40"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/10 via-background/60 to-background"></div>
+        <div className="absolute inset-0 bg-linear-to-b from-background/10 via-background/60 to-background"></div>
       </div>
       {/* green dots  */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -57,17 +67,17 @@ const Hero = () => {
             <div className="animate-fade-in">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pluse" />
-                Software Engineer React Specialist
+                Software Engineer Full Stack Developer
               </span>
             </div>
             {/* headline and description  */}
             <div className="space-y-4">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
                 Crafting <span className="text-primary glow-text">digital</span>
-                <br /> experiences with <br />{" "}
-                <span className="font-serif italic font-normal text-white">
+                <br /> experiences <br />{" "}
+                {/* <span className="font-serif italic font-normal text-white">
                   Precision.
-                </span>
+                </span> */}
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-800">
                 Hi, I'm Udoy Kumar, a passionate software engineer specializing
@@ -119,9 +129,9 @@ const Hero = () => {
               <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary/30 via-transparent to-primary/10 blur-2xl animate-pulse" />
               <div className="relative glass rounded-3xl p-2 glow-border">
                 <img
-                  src="/picture.png"
+                  src="/profile.png"
                   alt="My Profile Picture"
-                  className="w-full aspect-[4/5] object-cover rounded-2xl"
+                  className="w-full aspect-4/5 object-cover rounded-2xl"
                 />
                 {/* floating badge */}
                 <div className="absolute -bottom-4 -right-4 glass  rounded-xl px-4 py-3 animate-float">
@@ -147,10 +157,14 @@ const Hero = () => {
             Technologies I Work With
           </p>
           <div className="overflow-hidden w-full">
-            <div className="flex gap-6 w-max animate-marquee">
-              {[...skills, ...skills].map((skill, i) => (
-                <div key={i} className="shrink-0 px-2 py-2">
-                  <span className="text-sm md:text-lg font-semibold text-muted-foreground/50 hover:text-muted-foreground transition-colors px-2 py-1 rounded-full border border-teal-500/30  whitespace-nowrap">
+            <div className="flex gap-4 w-max animate-marquee">
+              {skills.map((skill, i) => (
+                <div key={i} className="shrink-0 py-2">
+                  <span
+                    className={`inline-flex items-center rounded-full border px-4 py-2 text-sm md:text-base font-semibold whitespace-nowrap transition-all duration-300 hover:-translate-y-1 ${
+                      skillColors[i % 3]
+                    }`}
+                  >
                     {skill}
                   </span>
                 </div>

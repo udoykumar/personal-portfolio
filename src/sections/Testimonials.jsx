@@ -1,45 +1,44 @@
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 import React, { useState } from "react";
 const testimonials = [
+  // {
+  //   quote:
+  //     "pedro is one of the most talented engineers I've worked with. His attends",
+  //   author: "Sarah Chen",
+  //   role: "CTO, Tech Innovators Inc.",
+  //   avatar:
+  //     "https://ik.imagekit.io/2y9ou0dfzs/user.png?updatedAt=1763391772680",
+  // },
+  // {
+  //   quote:
+  //     "Working with Alex was an absolute pleasure. His problem-solving skills and attention to detail consistently exceeded our expectations.",
+  //   author: "Michael Rodriguez",
+  //   role: "Engineering Manager, Bright Future Labs",
+  //   avatar:
+  //     "https://ik.imagekit.io/2y9ou0dfzs/user.png?updatedAt=1763391772680",
+  // },
+  // {
+  //   quote:
+  //     "Sophia brings creativity and technical excellence together. She always delivers clean, scalable solutions on time.",
+  //   author: "Emma Thompson",
+  //   role: "Product Lead, NextWave Solutions",
+  //   avatar:
+  //     "https://ik.imagekit.io/2y9ou0dfzs/user.png?updatedAt=1763391772680",
+  // },
+  // {
+  //   quote:
+  //     "Daniel is a highly reliable developer who takes ownership of every task. His communication skills make collaboration seamless.",
+  //   author: "James Wilson",
+  //   role: "Founder, CodeCraft Studio",
+  //   avatar:
+  //     "https://ik.imagekit.io/2y9ou0dfzs/user.png?updatedAt=1763391772680",
+  // },
   {
     quote:
-      "pedro is one of the most talented engineers I've worked with. His attends",
-    author: "Sarah Chen",
-    role: "CTO, Tech Innovators Inc.",
-    avatar:
-      "https://ik.imagekit.io/2y9ou0dfzs/user.png?updatedAt=1763391772680",
-  },
-  {
-    quote:
-      "Working with Alex was an absolute pleasure. His problem-solving skills and attention to detail consistently exceeded our expectations.",
-    author: "Michael Rodriguez",
-    role: "Engineering Manager, Bright Future Labs",
-    avatar:
-      "https://ik.imagekit.io/2y9ou0dfzs/user.png?updatedAt=1763391772680",
-  },
-  {
-    quote:
-      "Sophia brings creativity and technical excellence together. She always delivers clean, scalable solutions on time.",
-    author: "Emma Thompson",
-    role: "Product Lead, NextWave Solutions",
-    avatar:
-      "https://ik.imagekit.io/2y9ou0dfzs/user.png?updatedAt=1763391772680",
-  },
-  {
-    quote:
-      "Daniel is a highly reliable developer who takes ownership of every task. His communication skills make collaboration seamless.",
-    author: "James Wilson",
-    role: "Founder, CodeCraft Studio",
-    avatar:
-      "https://ik.imagekit.io/2y9ou0dfzs/user.png?updatedAt=1763391772680",
-  },
-  {
-    quote:
-      "Olivia's deep understanding of system architecture helped us optimize performance significantly. A true professional.",
-    author: "Liam Anderson",
-    role: "CTO, Digital Horizon",
-    avatar:
-      "https://ik.imagekit.io/2y9ou0dfzs/user.png?updatedAt=1763391772680",
+      "Full-stack Developer with four years of professional experience at R3 Soft and Sprint Devs, specializing in designing scalable database architectures and developing end-to-end web applications. Passionate about building innovative digital solutions and continuously expanding expertise in web development, mobile application development, digital marketing, and data engineering. Dedicated to solving real-world problems, optimizing business processes, and contributing to the success of forward-thinking and dynamic teams through technology-driven solutions.",
+    author: "Uttam Kumar",
+    role: "Fullstack, Laravel Developer",
+    avatar: "",
   },
 ];
 const Testimonials = () => {
@@ -81,7 +80,7 @@ const Testimonials = () => {
               </blockquote>
               <div className="flex items-center gap-4">
                 <img
-                  src={testimonials[activeIndex].avatar}
+                  src="./uttam.png"
                   alt="Testimonials pic"
                   className="w-14 h-14 rounded-full object-cover ring-2 ring-primary/20"
                 />

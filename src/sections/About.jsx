@@ -1,4 +1,4 @@
-import { Code2, Lightbulb, Rocket, Users } from "lucide-react";
+import { Code2, Gauge, Users, Lightbulb } from "lucide-react";
 import React from "react";
 
 const highlights = [
@@ -6,77 +6,93 @@ const highlights = [
     icon: Code2,
     title: "Clean Code",
     description:
-      "Staying ahead with the latest technologies and best practices.",
+      "Writing scalable, maintainable, and well-structured code following modern development practices.",
   },
   {
-    icon: Rocket,
+    icon: Gauge,
     title: "Performance",
     description:
-      "Optimizing for speed and delivering lightning-fast user experiences.",
+      "Building fast, responsive, and optimized web experiences with a strong focus on performance.",
   },
   {
     icon: Users,
     title: "Collaboration",
-    description: "Working closely with teams to bring ideas to life.",
+    description:
+      "Communicating ideas, sharing knowledge, and working effectively to achieve shared goals.",
   },
   {
     icon: Lightbulb,
-    title: "Innovation",
+    title: "Problem Solving",
     description:
-      "Staying ahead with the latest technologies and best practices.",
+      "Turning complex challenges into simple, practical, and user-friendly solutions.",
   },
 ];
+
 const About = () => {
   return (
-    <section id="about" className="py-32 relative overflow-hidden">
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+    <section id="about" className="relative overflow-hidden py-24 md:py-32">
+      <div className="container relative z-10 mx-auto px-6">
+        <div className="grid items-center gap-16 lg:grid-cols-2">
+          {/* Left Content */}
           <div className="space-y-8">
             <div className="animate-fade-in">
-              <span className="text-secondary-foreground text-sm font-medium tracking-wide uppercase">
+              <span className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">
                 About Me
               </span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-secondary-foreground">
-              Building the future,
-              <span className="font-serif italic font-normal text-white">
-                one component at a time.
+
+            <h2 className="animate-fade-in text-4xl font-bold leading-tight text-secondary-foreground animation-delay-100 md:text-5xl">
+              Turning ideas into
+              <span className="block font-serif font-normal italic text-primary">
+                meaningful digital experiences.
               </span>
             </h2>
-            <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
+
+            <div className="animate-fade-in space-y-5 text-base leading-8 text-muted-foreground animation-delay-200">
               <p>
-                I'm a passionate frontend developer with expertise in
-                React,Nextjs building everything from sleek landing pages to
-                complex enterprise applications. My approach combines technical
-                excellence with keen eye for design and user experience.
+                I'm a frontend developer passionate about building modern,
+                responsive, and user-focused web applications. I specialize in
+                React and Next.js, transforming ideas into intuitive digital
+                experiences with clean code and thoughtful design.
               </p>
+
               <p>
-                When i'm not coding, you'll find me exploring new technologies,
-                contributing to open source projects, or sharing knowledge with
-                the developer community.
+                I enjoy exploring modern web technologies, solving real-world
+                problems, and continuously improving my development skills. My
+                goal is to build products that combine functionality,
+                performance, and exceptional user experience.
               </p>
             </div>
-            <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
-              <p className="text-lg text-foreground italic font-medium">
-                My mission is to create digital experiences that are not just
-                function, but truly delightful - products that users love to use
-                and developers love to maintain.
+
+            {/* Mission */}
+            <div className="glass glow-border animate-fade-in rounded-2xl p-6 animation-delay-300">
+              <p className="text-lg font-medium italic leading-relaxed text-foreground">
+                "I believe great development is about more than writing code —
+                it's about creating meaningful experiences that make a
+                difference."
               </p>
             </div>
           </div>
-          {/* right column - highlights */}
-          <div className="grid md:grid-cols-2 gap-8">
+
+          {/* Right Highlights */}
+          <div className="grid gap-5 sm:grid-cols-2">
             {highlights.map((item, index) => (
               <div
-                key={index}
-                className="glass p-6 rounded-2xl animate-fade-in "
-                style={{ animationDelay: `${(index + 1) * 100}ms` }}
+                key={item.title}
+                className="glass group rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 hover:glow-border animate-fade-in"
+                style={{
+                  animationDelay: `${(index + 1) * 100}ms`,
+                }}
               >
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 hover:bg-primary/20">
-                  <item.icon className="w-6 h-6 text-primary" />
+                <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 transition-colors duration-300 group-hover:bg-primary/20">
+                  <item.icon className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                <p className="text-sm text-muted-foreground">
+
+                <h3 className="mb-3 text-xl font-semibold text-foreground">
+                  {item.title}
+                </h3>
+
+                <p className="text-sm leading-7 text-muted-foreground">
                   {item.description}
                 </p>
               </div>
